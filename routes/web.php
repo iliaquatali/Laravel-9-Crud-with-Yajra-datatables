@@ -21,4 +21,4 @@ Route::get('/', function () {
 Route::get('users', [UserController::class, 'index'])->name('users.index');
 
 Route::resource('companies', CompanyCRUDController::class);
-Route::post('delete-company', [CompanyCRUDController::class,'destroy']);
+Route::post('delete-company', [CompanyCRUDController::class,'destroy']);    
